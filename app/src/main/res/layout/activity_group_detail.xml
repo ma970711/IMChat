@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".controller.activity.GroupDetailActivity">
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarTitle="群详情"/>
+    <GridView
+        android:id="@+id/gv_groupdetail"
+        android:numColumns="4"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></GridView>
+    <Button
+        android:id="@+id/bt_groupdetail_out"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/holo_red_light"
+        android:text="退群"
+        android:textSize="26sp"
+        android:textColor="@color/btn_white_normal"/>
+
+</LinearLayout>

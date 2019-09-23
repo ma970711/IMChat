@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.activity.PickContactActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/holo_blue_bright"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择联系人"
+            android:textSize="25sp"
+            android:textColor="@color/btn_white_normal"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="保存"
+            android:id="@+id/tv_pick_save"
+            android:textSize="25sp"
+            android:textColor="@color/btn_white_normal"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_pick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

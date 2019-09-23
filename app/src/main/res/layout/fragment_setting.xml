@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<com.hyphenate.easeui.widget.EaseTitleBar
+    app:titleBarTitle="设置"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</com.hyphenate.easeui.widget.EaseTitleBar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:text="Settings"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    <Button
+        android:id="@+id/bt_setting_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="退出登录"
+        android:textSize="20sp"
+
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"/>
+</LinearLayout>
